@@ -84,7 +84,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ### 请求格式（OpenAI 兼容）
 
-
+```
 POST https://ark.cn-beijing.volces.com/api/v3/chat/completions
 Authorization: Bearer your-real-api-key
 Content-Type: application/json
