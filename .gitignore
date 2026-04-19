@@ -1,0 +1,24 @@
+# ESP-IDF 构建产物
+build/
+.cache/
+sdkconfig
+sdkconfig.old
+
+# 本地敏感配置（Wi-Fi 凭据、API Key 等）
+# 使用 sdkconfig.local 覆盖 sdkconfig.defaults 中的占位符值
+sdkconfig.local
+
+# IDE / 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Python 虚拟环境（部分 ESP-IDF 工具会创建）
+.venv/
+__pycache__/
+*.pyc

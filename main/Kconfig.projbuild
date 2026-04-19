@@ -1,0 +1,40 @@
+menu "智能药盒配置 (Kangyang)"
+
+    menu "Wi-Fi 配置"
+
+        config WIFI_SSID
+            string "Wi-Fi SSID（网络名称）"
+            default "MyWiFiSSID"
+            help
+                输入要连接的 Wi-Fi 网络名称（SSID）。
+
+        config WIFI_PASSWORD
+            string "Wi-Fi 密码"
+            default "MyWiFiPassword"
+            help
+                输入 Wi-Fi 密码。如果是开放网络，请留空。
+
+    endmenu
+
+    menu "豆包 AI 任务配置"
+
+        config DOUBAO_TASK_STACK_SIZE
+            int "豆包任务栈大小（字节）"
+            default 8192
+            range 4096 65536
+            help
+                豆包 AI 对话 FreeRTOS 任务的栈大小（字节）。
+                由于需要处理较大的 JSON 数据，建议不低于 8192 字节。
+                若开启了将任务栈分配在 PSRAM，可适当增大此值。
+
+        config DOUBAO_TASK_PRIORITY
+            int "豆包任务优先级"
+            default 5
+            range 1 25
+            help
+                豆包 AI 对话 FreeRTOS 任务的优先级。
+                数值越大优先级越高（最大值为 configMAX_PRIORITIES - 1）。
+
+    endmenu
+
+endmenu

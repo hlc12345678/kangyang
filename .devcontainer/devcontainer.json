@@ -1,0 +1,5 @@
+{
+  "name": "ESP-IDF v5.5.2",
+  "image": "espressif/idf:v5.5.2",
+  "remoteUser": "root"
+}
