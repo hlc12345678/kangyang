@@ -29,13 +29,13 @@ extern "C" {
  * 警告：生产环境中请勿将密钥硬编码在源码中，应通过 NVS/环境变量等方式注入。
  * 使用前请将下方字符串替换为真实的 API Key，否则运行时将返回认证错误。
  */
-#define DOUBAO_API_KEY       "YOUR_API_KEY_HERE"
+#define DOUBAO_API_KEY       "ark-cb4b158d-74c0-4eb8-b4d0-61825a6e881a-fbd29"
 
 /** 占位符 API Key 字符串，用于运行时检测未替换的情况 */
-#define DOUBAO_API_KEY_PLACEHOLDER "YOUR_API_KEY_HERE"
+#define DOUBAO_API_KEY_PLACEHOLDER "ark-cb4b158d-74c0-4eb8-b4d0-61825a6e881a-fbd29"
 
 /** 豆包模型 ID（在火山引擎控制台创建推理接入点后获得）*/
-#define DOUBAO_MODEL_ID      "doubao-1-5-pro-32k-250115"
+#define DOUBAO_MODEL_ID      "doubao-seed-2-0-pro-260215"
 
 /**
  * HTTP 响应接收缓冲区大小（字节）
