@@ -32,7 +32,7 @@ extern "C" {
 #define DOUBAO_API_KEY       "ark-cb4b158d-74c0-4eb8-b4d0-61825a6e881a-fbd29"
 
 /** 占位符 API Key 字符串，用于运行时检测未替换的情况 */
-#define DOUBAO_API_KEY_PLACEHOLDER "ark-cb4b158d-74c0-4eb8-b4d0-61825a6e881a-fbd29"
+#define DOUBAO_API_KEY_PLACEHOLDER "your-real-api-key"
 
 /** 豆包模型 ID（在火山引擎控制台创建推理接入点后获得）*/
 #define DOUBAO_MODEL_ID      "doubao-seed-2-0-pro-260215"

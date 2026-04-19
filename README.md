@@ -86,8 +86,8 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 
 POST https://ark.cn-beijing.volces.com/api/v3/chat/completions
-Authorization: Bearer ark-cb4b158d-74c0-4eb8-b4d0-61825a6e881a-fbd29
-Content-Type:doubao-seed-2-0-pro-260215
+Authorization: Bearer your-real-api-key
+Content-Type: application/json
 
 {
   "model": "doubao-1-5-pro-32k-250115",
