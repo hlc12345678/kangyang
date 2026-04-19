@@ -29,7 +29,7 @@ extern "C" {
  * 警告：生产环境中请勿将密钥硬编码在源码中，应通过 NVS/环境变量等方式注入。
  * 使用前请将下方字符串替换为真实的 API Key，否则运行时将返回认证错误。
  */
-#define DOUBAO_API_KEY       "your-real-api-key"
+#define DOUBAO_API_KEY       DOUBAO_API_KEY_PLACEHOLDER
 
 /** 占位符 API Key 字符串，用于运行时检测未替换的情况 */
 #define DOUBAO_API_KEY_PLACEHOLDER "your-real-api-key"
